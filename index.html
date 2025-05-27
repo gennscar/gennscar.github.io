@@ -1,1 +1,697 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gennaro Scarati - Robotics & AI Engineer | Autonomous Systems Specialist</title>
+    <meta name="description" content="Robotics & AI Engineer with expertise in ROS/ROS2, autonomous systems, and computer vision. Experience with collaborative robots, UAVs, and production control systems.">
+    <meta name="keywords" content="robotics engineer, AI engineer, ROS, ROS2, autonomous systems, computer vision, UAV, collaborative robots, Barcelona, Eurecat">
+    <meta name="author" content="Gennaro Scarati">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://gennaroscarati.com/">
+    <meta property="og:title" content="Gennaro Scarati - Robotics & AI Engineer">
+    <meta property="og:description" content="Robotics & AI Engineer specializing in autonomous systems, computer vision, and collaborative robots.">
+    <meta property="og:image" content="https://gennaroscarati.com/assets/images/profile.jpeg">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://gennaroscarati.com/">
+    <meta property="twitter:title" content="Gennaro Scarati - Robotics & AI Engineer">
+    <meta property="twitter:description" content="Robotics & AI Engineer specializing in autonomous systems, computer vision, and collaborative robots.">
+    <meta property="twitter:image" content="https://gennaroscarati.com/assets/images/profile.jpeg">
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- GSAP with ScrollToPlugin -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollToPlugin.min.js"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="nav">
+        <div class="nav-container">
+            <div class="nav-logo" id="homeButton" aria-label="Go to top">
+                <div class="logo-container">
+                    <div class="logo-text">GS</div>
+                    <div class="logo-circles">
+                        <div class="circle circle-1"></div>
+                        <div class="circle circle-2"></div>
+                        <div class="circle circle-3"></div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-controls">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <svg class="theme-icon sun-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <circle cx="12" cy="12" r="5"/>
+                        <path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+                    </svg>
+                    <svg class="theme-icon moon-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                <div class="nav-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+        <div class="hero-background">
+            <div class="circuit-pattern"></div>
+            <div class="floating-particles"></div>
+        </div>
+        
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <p class="hero-subtitle">// Robotics & AI Engineer</p>
+                    <h1 class="hero-title">
+                        <span class="title-line">Gennaro</span>
+                        <span class="title-line">Scarati</span>
+                    </h1>
+                    <p class="hero-description">
+                        Robotics & AI Engineer specializing in autonomous systems, computer vision, and control algorithms. 
+                        Extensive experience with ROS2, C++, Python and OpenCV.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#experience" class="btn btn-primary">
+                            <span>View Experience</span>
+                            <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                        <a href="assets/documents/Resume_Gennaro_Scarati.pdf" target="_blank" class="btn btn-secondary">
+                            <span>Download CV</span>
+                            <svg class="btn-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 10v6m0 0l-3-3m3 3l3-3m2 8H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="profile-container">
+                        <div class="profile-image-wrapper">
+                            <img src="assets/images/profile.png" alt="Gennaro Scarati" class="profile-image">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <div class="mouse-scroll">
+                    <div class="mouse">
+                        <div class="mouse-wheel"></div>
+                    </div>
+                    <div class="scroll-arrows">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">01.</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        Robotics and AI Engineer with deep expertise in robotic systems design, ROS/ROS2, and autonomous systems.
+                    </p>
+                    <p>
+                        I specialize in research and implementation of state-of-the-art robotics technologies including 
+                        path planning, localization, control systems, and computer vision. My experience spans from 
+                        academic research to industrial applications, working with leading robotics platforms and 
+                        managing cross-functional teams to deliver innovative solutions.
+                    </p>
+                    <p>
+                        Currently working at Eurecat Technology Centre in Barcelona, I lead robotics projects for both 
+                        private clients and public organizations, including national and European programs. My work 
+                        involves extensive hands-on experience with collaborative robots (KUKA, Universal Robots), 
+                        UAVs, computer vision systems, and various mechatronic platforms.
+                    </p>
+                    <p>
+                        Previously, I developed engine control systems for General Motors vehicles with deployment 
+                        on <span class="highlight-number">100,000+</span> vehicles, achieving significant cost savings of 
+                        <span class="highlight-number">€8M+</span> through advanced machine learning algorithms for fault estimation. 
+                        I also contributed to an AI startup that raised <span class="highlight-number">€3M+</span> in investments.
+                    </p>
+                </div>
+                
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number highlight-number">3+</span>
+                        <span class="stat-label">Years Experience</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number highlight-number">100K+</span>
+                        <span class="stat-label">Vehicles Deployed</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number highlight-number">€8M+</span>
+                        <span class="stat-label">Cost Savings</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">02.</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3 class="category-title">Robotics & Control</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">ROS & ROS2</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">Path Planning</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">Localization & SLAM</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">Control Systems</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Advanced">Autonomous Navigation</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Programming & Development</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">C++</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="95"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="93"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">MATLAB/Simulink</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Advanced">Git & Docker</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">Linux</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">AI & Computer Vision</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">Computer Vision</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">OpenCV</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="92"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Advanced">Object Detection</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Advanced">Machine Learning</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="80"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Advanced">CUDA Programming</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="skill-category">
+                    <h3 class="category-title">Hardware & Platforms</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">KUKA Robots</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="88"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Expert">Universal Robots</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="90"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Advanced">NVIDIA Jetson</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="82"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Advanced">RGB-D Cameras</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="85"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-name" data-level="Advanced">UAV Systems</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-progress="87"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">03.</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M12 2L13.09 8.26L22 9L13.09 9.74L12 16L10.91 9.74L2 9L10.91 8.26L12 2Z"/>
+                                <path d="M12 8L12.5 10.5L15 11L12.5 11.5L12 14L11.5 11.5L9 11L11.5 10.5L12 8Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Autonomous UAV Landing System</h3>
+                        <p class="project-description">
+                            Developed and validated precision landing technology for UAVs on moving platforms with 
+                            centimeter-level accuracy. Complete system design including localization techniques 
+                            (UWB and custom Kalman Filters), control algorithms, and state machines.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ROS</span>
+                            <span class="tech-tag">C++</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">UWB</span>
+                            <span class="tech-tag">Kalman Filters</span>
+                            <span class="tech-tag">Computer Vision</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://drive.google.com/file/d/1V5iVKlPARa6AM3C4ZhR9TB-cqZ_r1soi/view?usp=share_link" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                                </svg>
+                                Demo
+                            </a>
+                            <a href="https://github.com/gennscar" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M18.92 6.01C18.72 5.42 18.16 5 17.5 5h-11c-.66 0-1.22.42-1.42 1.01L3 12v8c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-1h12v1c0 .55.45 1 1 1h1c.55 0 1-.45 1-1v-8l-2.08-5.99zM6.5 16c-.83 0-1.5-.67-1.5-1.5S5.67 13 6.5 13s1.5.67 1.5 1.5S7.33 16 6.5 16zm11 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zM5 11l1.5-4.5h11L19 11H5z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">GM Engine Control Systems</h3>
+                        <p class="project-description">
+                            Developed control and diagnostic systems for General Motors vehicles (GMC Sierra and 
+                            Chevrolet Silverado 2024-2027) with deployment on <span class="highlight-number">100,000+</span> vehicles. 
+                            Achieved <span class="highlight-number">€8M+</span> cost savings through machine learning algorithms 
+                            for fault estimation and Six Sigma optimization.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Simulink</span>
+                            <span class="tech-tag">C</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Six Sigma</span>
+                            <span class="tech-tag">HIL Testing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                                </svg>
+                                Production
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M9,5A4,4 0 0,1 13,9A4,4 0 0,1 9,13A4,4 0 0,1 5,9A4,4 0 0,1 9,5M9,15C11.67,15 17,16.34 17,19V21H1V19C1,16.34 6.33,15 9,15M16.76,5.36C18.78,7.56 18.78,10.61 16.76,12.63L15.08,10.94C15.92,9.76 15.92,8.23 15.08,7.05L16.76,5.36M20.07,2C24,6.05 23.97,12.11 20.07,16.07L18.44,14.44C21.21,11.19 21.21,6.65 18.44,3.63L20.07,2Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">AI Concept Map Generator</h3>
+                        <p class="project-description">
+                            NLP software that automatically generates concept maps from text, winning first place 
+                            at Challenge@Polito AI competition. The project contributed to an AI startup that 
+                            raised over <span class="highlight-number">€3M+</span> in investments.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">NLP</span>
+                            <span class="tech-tag">Machine Learning</span>
+                            <span class="tech-tag">AI</span>
+                            <span class="tech-tag">Text Processing</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/gennscar" target="_blank" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                                </svg>
+                                GitHub
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,16.5L18,9.5L16.59,8.09L11,13.67L7.91,10.59L6.5,12L11,16.5Z"/>
+                                </svg>
+                                Award Winner
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-placeholder">
+                            <svg class="project-icon" viewBox="0 0 24 24" fill="currentColor">
+                                <path d="M17,10.5V7A1,1 0 0,0 16,6H4A1,1 0 0,0 3,7V10.5C3.59,10.5 4.09,10.81 4.35,11.27C4.62,11.73 4.59,12.3 4.28,12.73C3.97,13.16 3.44,13.35 2.94,13.22C2.44,13.09 2.06,12.68 2,12.17V17A1,1 0 0,0 3,18H16A1,1 0 0,0 17,17V12.17C16.94,12.68 16.56,13.09 16.06,13.22C15.56,13.35 15.03,13.16 14.72,12.73C14.41,12.3 14.38,11.73 14.65,11.27C14.91,10.81 15.41,10.5 16,10.5H17M19,7V17A3,3 0 0,1 16,20H3A3,3 0 0,1 0,17V7A3,3 0 0,1 3,4H16A3,3 0 0,1 19,7M9.5,8A1.5,1.5 0 0,0 8,9.5A1.5,1.5 0 0,0 9.5,11A1.5,1.5 0 0,0 11,9.5A1.5,1.5 0 0,0 9.5,8Z"/>
+                            </svg>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Agricultural Robotics Platform</h3>
+                        <p class="project-description">
+                            Research project focused on developing cost-effective robotics solutions for agricultural 
+                            automation, with emphasis on human-robot interaction and demonstration learning. 
+                            Accepted for presentation at European Robotics Forum 2025.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-tag">ROS2</span>
+                            <span class="tech-tag">Computer Vision</span>
+                            <span class="tech-tag">Agricultural Robotics</span>
+                            <span class="tech-tag">Human-Robot Interaction</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M19,3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,5V19H5V5H19Z"/>
+                                </svg>
+                                Research
+                            </a>
+                            <a href="#" class="project-link">
+                                <svg viewBox="0 0 24 24" fill="currentColor">
+                                    <path d="M9,10H7V12H9V10M13,10H11V12H13V10M17,10H15V12H17V10M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5C3.89,21 3,20.1 3,19V5A2,2 0 0,1 5,3H6V1H8V3H16V1H18V3H19M19,19V8H5V19H19M7,14H9V16H7V14M11,14H13V16H11V14M15,14H17V16H15V14Z"/>
+                                </svg>
+                                ERF 2025
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">04.</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">July 2023 - Present</div>
+                        <h3 class="timeline-title">Robotics & AI Engineer</h3>
+                        <div class="timeline-company">Eurecat - Technology Centre of Catalonia</div>
+                        <p class="timeline-description">
+                            Research and implement state-of-the-art robotics and AI solutions. Lead technical teams 
+                            and manage customer relationships for both private and public projects including national 
+                            and European programs. Extensive hands-on experience with collaborative robots, UAVs, 
+                            and computer vision systems.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">C++</span>
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">ROS</span>
+                            <span class="skill-chip">ROS2</span>
+                            <span class="skill-chip">OpenCV</span>
+                            <span class="skill-chip">CUDA</span>
+                            <span class="skill-chip">Docker</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">March 2022 - July 2023</div>
+                        <h3 class="timeline-title">Control Systems Engineer</h3>
+                        <div class="timeline-company">Dumarey Softronix (Contractor for General Motors)</div>
+                        <p class="timeline-description">
+                            Developed engine control and diagnostic systems for General Motors vehicles (GMC Sierra 
+                            and Chevrolet Silverado 2024-2027) with deployment on <span class="highlight-number">100,000+</span> vehicles. 
+                            Achieved <span class="highlight-number">€8M+</span> cost savings through machine learning algorithms 
+                            for fault estimation and Six Sigma optimization.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">MATLAB</span>
+                            <span class="skill-chip">Simulink</span>
+                            <span class="skill-chip">C</span>
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">Six Sigma</span>
+                            <span class="skill-chip">HIL Testing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">March 2021 - December 2021</div>
+                        <h3 class="timeline-title">Master's Thesis Researcher</h3>
+                        <div class="timeline-company">PIC4SeR - Politecnico di Torino Centre for Service Robotics</div>
+                        <p class="timeline-description">
+                            Developed autonomous UAV landing technology for precise landings on moving platforms, 
+                            achieving centimeter-level precision in real-world field tests. Complete system design 
+                            from simulation to implementation including custom localization techniques and control algorithms.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">ROS</span>
+                            <span class="skill-chip">C++</span>
+                            <span class="skill-chip">Python</span>
+                            <span class="skill-chip">UWB</span>
+                            <span class="skill-chip">Kalman Filters</span>
+                            <span class="skill-chip">Computer Vision</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <div class="timeline-dot"></div>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">September 2019 - December 2021</div>
+                        <h3 class="timeline-title">Master of Engineering in Mechatronic Engineering</h3>
+                        <div class="timeline-company">Politecnico di Torino</div>
+                        <p class="timeline-description">
+                            Final grade: <span class="highlight-number">110 with honours/110</span> (GPA: <span class="highlight-number">4.0/4.0</span>). Won first place at "Challenge@Polito: 
+                            Artificial Intelligence" with an NLP software application that contributed to an AI startup 
+                            raising over <span class="highlight-number">€3M+</span> in investments.
+                        </p>
+                        <div class="timeline-skills">
+                            <span class="skill-chip">AI</span>
+                            <span class="skill-chip">NLP</span>
+                            <span class="skill-chip">Machine Learning</span>
+                            <span class="skill-chip">Robotics</span>
+                            <span class="skill-chip">Control Systems</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-number">05.</span>
+                <h2 class="section-title">Get In Touch</h2>
+            </div>
+            
+            <div class="contact-content">
+                <p class="contact-intro">
+                    Here you find my contact information and my social media profiles.
+                </p>
+                
+                <div class="contact-links">
+                    <a href="mailto:gennaro.scarati@outlook.com" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+                        </svg>
+                        <span>gennaro.scarati@outlook.com</span>
+                    </a>
+                    
+                    <a href="https://www.linkedin.com/in/gennaroscarati/" target="_blank" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                        </svg>
+                        <span>LinkedIn Profile</span>
+                    </a>
+                    
+                    <a href="https://github.com/gennscar" target="_blank" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                        <span>GitHub Profile</span>
+                    </a>
+                    
+                    <a href="https://orcid.org/0009-0000-5255-0635" target="_blank" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c2.272 0 3.781-1.391 3.781-3.722 0-2.331-1.509-3.722-3.781-3.722h-2.297z"/>
+                        </svg>
+                        <span>ORCID Profile</span>
+                    </a>
+                    
+                    <a href="tel:+34672918951" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+                        </svg>
+                        <span>(+34) 672 918 951</span>
+                    </a>
+                    
+                    <a href="assets/documents/Resume_Gennaro_Scarati.pdf" target="_blank" class="contact-link">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M14,3V5H17.59L7.76,14.83L9.17,16.24L19,6.41V10H21V3M19,19H5V5H12V3H5C3.89,3 3,3.9 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V12H19V19Z"/>
+                        </svg>
+                        <span>Download Resume</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 Gennaro Scarati. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="https://www.linkedin.com/in/gennaroscarati/" target="_blank" class="footer-link">LinkedIn</a>
+                    <a href="https://github.com/gennscar" target="_blank" class="footer-link">GitHub</a>
+                    <a href="https://orcid.org/0009-0000-5255-0635" target="_blank" class="footer-link">ORCID</a>
+                    <a href="mailto:gennaro.scarati@outlook.com" class="footer-link">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="script.js"></script>
+</body>
+</html>

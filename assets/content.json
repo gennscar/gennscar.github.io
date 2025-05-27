@@ -1,0 +1,212 @@
+{
+  "personal": {
+    "name": "Gennaro Scarati",
+    "title": "Robotics & AI Engineer",
+    "subtitle": "Autonomous Systems & Computer Vision Specialist",
+    "email": "gennaro.scarati@outlook.com",
+    "phone": "(+34) 672 918 951",
+    "location": "Barcelona, Spain",
+    "linkedin": "https://www.linkedin.com/in/gennaroscarati/",
+    "github": "https://github.com/gennscar",
+    "orcid": "https://orcid.org/0009-0000-5255-0635"
+  },
+  "about": {
+    "summary": "Robotics and AI Engineer with deep expertise in robotic systems design, ROS/ROS2, and autonomous systems. Extensive hands-on experience with collaborative robots, UAVs, and computer vision applications. Passionate about developing cutting-edge solutions for complex robotics challenges, from autonomous UAV landing systems to industrial control systems.",
+    "description": "I specialize in research and implementation of state-of-the-art robotics technologies including path planning, localization, control systems, and computer vision. My experience spans from academic research to industrial applications, working with leading robotics platforms and managing cross-functional teams to deliver innovative solutions.",
+    "stats": {
+      "experience": "3+ Years",
+      "vehicles": "100K+ Vehicles",
+      "savings": "€8M+ Cost Savings"
+    }
+  },
+  "skills": {
+    "robotics": [
+      "ROS & ROS2",
+      "Path Planning",
+      "Localization & SLAM",
+      "Control Systems",
+      "Autonomous Navigation",
+      "UAV Systems",
+      "Collaborative Robots"
+    ],
+    "programming": [
+      "C++",
+      "Python",
+      "MATLAB/Simulink",
+      "C",
+      "Git",
+      "Docker",
+      "Linux"
+    ],
+    "ai_cv": [
+      "Computer Vision",
+      "OpenCV",
+      "Object Detection",
+      "Segmentation",
+      "Tracking",
+      "Machine Learning",
+      "CUDA Programming"
+    ],
+    "hardware": [
+      "KUKA Robots",
+      "Universal Robots",
+      "NVIDIA Jetson",
+      "RGB-D Cameras",
+      "Thermal Cameras",
+      "UWB Systems",
+      "End-Effectors"
+    ],
+    "tools": [
+      "Jira",
+      "DOORS",
+      "ETAS INCA",
+      "MDA",
+      "Six Sigma",
+      "Agile/Scrum",
+      "V-Model",
+      "MBSE"
+    ]
+  },
+  "projects": [
+    {
+      "title": "Autonomous UAV Landing System",
+      "description": "Developed and validated precision landing technology for UAVs on moving platforms with centimeter-level accuracy.",
+      "details": "Complete system design including localization techniques (UWB and custom Kalman Filters), control algorithms, and state machines for autonomous chase and landing phases. Achieved real-world validation with custom UAV and rover platforms.",
+      "technologies": ["ROS", "C++", "Python", "UWB", "Kalman Filters", "Computer Vision", "Control Systems"],
+      "image": "assets/images/projects/uav-landing.jpg",
+      "video": "assets/videos/projects/uav-landing-demo.mp4",
+      "github": "https://github.com/gennscar/uav-autonomous-landing",
+      "demo": "https://drive.google.com/file/d/1V5iVKlPARa6AM3C4ZhR9TB-cqZ_r1soi/view?usp=share_link",
+      "status": "Completed",
+      "year": "2021"
+    },
+    {
+      "title": "GM Engine Control Systems",
+      "description": "Developed control and diagnostic systems for General Motors vehicles with deployment on 100,000+ vehicles.",
+      "details": "Defined specifications and implemented engine control systems for GMC Sierra and Chevrolet Silverado (2024-2027 models). Improved diagnostic systems using machine learning algorithms for fault estimation and Six Sigma analysis, resulting in €8M+ cost savings.",
+      "technologies": ["MATLAB", "Simulink", "C", "Python", "Six Sigma", "Machine Learning", "HIL Testing"],
+      "image": "assets/images/projects/gm-control.jpg",
+      "github": "",
+      "demo": "",
+      "status": "Production",
+      "year": "2022-2023"
+    },
+    {
+      "title": "AI Concept Map Generator",
+      "description": "NLP software that automatically generates concept maps from text, winning first place at Challenge@Polito AI competition.",
+      "details": "Developed an innovative NLP application that analyzes text and creates visual concept maps. The project contributed to an AI startup that raised over €3M+ in investments.",
+      "technologies": ["Python", "NLP", "Machine Learning", "AI", "Text Processing"],
+      "image": "assets/images/projects/concept-maps.jpg",
+      "github": "https://github.com/gennscar/ai-concept-maps",
+      "demo": "",
+      "status": "Startup",
+      "year": "2021"
+    },
+    {
+      "title": "Agricultural Robotics Platform",
+      "description": "Affordable hardware platform for human demonstration acquisition in agricultural applications.",
+      "details": "Research project focused on developing cost-effective robotics solutions for agricultural automation, with emphasis on human-robot interaction and demonstration learning.",
+      "technologies": ["ROS2", "Computer Vision", "Agricultural Robotics", "Human-Robot Interaction"],
+      "image": "assets/images/projects/agricultural-robotics.jpg",
+      "github": "",
+      "demo": "",
+      "status": "Research",
+      "year": "2024-2025"
+    }
+  ],
+  "experience": [
+    {
+      "title": "Robotics & AI Engineer",
+      "company": "Eurecat - Technology Centre of Catalonia",
+      "period": "July 2023 - Present",
+      "location": "Barcelona, Spain",
+      "description": "Research and implement state-of-the-art robotics and AI solutions. Lead technical teams and manage customer relationships for both private and public projects including national and European programs.",
+      "achievements": [
+        "Developed autonomous robotics systems with path planning, localization, and control capabilities",
+        "Implemented computer vision features including detection, segmentation, and tracking",
+        "Led project teams of 3-5 members to meet deadlines and performance targets",
+        "Managed technical interactions with customers and suppliers",
+        "Coordinated project proposals with budget planning and resource allocation"
+      ],
+      "skills": ["C++", "Python", "ROS", "ROS2", "OpenCV", "Docker", "Linux", "CUDA"]
+    },
+    {
+      "title": "Control Systems Engineer",
+      "company": "Dumarey Softronix (Contractor for General Motors)",
+      "period": "March 2022 - July 2023",
+      "location": "Turin, Italy",
+      "description": "Developed engine control and diagnostic systems for General Motors vehicles with deployment on 100,000+ vehicles. Achieved €8M+ cost savings through machine learning algorithms for fault estimation and Six Sigma optimization.",
+      "achievements": [
+        "Developed control systems for GMC Sierra and Chevrolet Silverado (2024-2027 models)",
+        "Achieved €8M+ cost savings through machine learning algorithms for fault estimation and Six Sigma analysis",
+        "Collaborated with cross-functional teams across Italy, US, and India",
+        "Implemented automated testing methods for control algorithms",
+        "Applied Agile/Scrum methodologies with V-Model lifecycle"
+      ],
+      "skills": ["MATLAB", "Simulink", "C", "Python", "Six Sigma", "Machine Learning", "HIL Testing"]
+    },
+    {
+      "title": "Master's Thesis Researcher",
+      "company": "PIC4SeR - Politecnico di Torino Centre for Service Robotics",
+      "period": "March 2021 - December 2021",
+      "location": "Turin, Italy",
+      "description": "Developed autonomous UAV landing technology for precise landings on moving platforms, achieving centimeter-level precision in real-world field tests.",
+      "achievements": [
+        "Designed complete autonomous landing system from simulation to implementation",
+        "Developed custom localization techniques using UWB and Kalman Filters",
+        "Implemented control algorithms and state machines for chase and landing phases",
+        "Achieved centimeter-level landing precision in field tests",
+        "Validated systems in real scenarios following extensive simulations"
+      ],
+      "skills": ["ROS", "C++", "Python", "UWB", "Kalman Filters", "Control Systems", "Computer Vision"]
+    }
+  ],
+  "education": [
+    {
+      "degree": "Master of Engineering in Mechatronic Engineering",
+      "school": "Politecnico di Torino",
+      "period": "September 2019 - December 2021",
+      "location": "Turin, Italy",
+      "grade": "110 with honours/110 (GPA: 29.9/30)",
+      "achievements": [
+        "Won first place at Challenge@Polito: Artificial Intelligence",
+        "Contributed to AI startup that raised €3M+ in investments"
+      ]
+    },
+    {
+      "degree": "Bachelor of Engineering in Mechanical Engineering",
+      "school": "Politecnico di Torino",
+      "period": "September 2016 - September 2019",
+      "location": "Turin, Italy",
+      "grade": "110/110"
+    }
+  ],
+  "certifications": [
+    "Machine Learning - Stanford University Online",
+    "Learn ROS2 as a ROS1 Developer and Migrate Your ROS Projects",
+    "IELTS 7.0 - C1 Proficiency",
+    "ROS for Beginners: Basics, Motion, and OpenCV",
+    "ROS for Beginners II: Localization, Navigation and SLAM"
+  ],
+  "languages": [
+    {"language": "Italian", "level": "Native"},
+    {"language": "English", "level": "Advanced (C1 IELTS)"},
+    {"language": "Spanish", "level": "Advanced (C1)"},
+    {"language": "German", "level": "Elementary (A2)"}
+  ],
+  "publications": [
+    {
+      "title": "Advances on Affordable Hardware Platforms for Human Demonstration Acquisition in Agricultural Applications",
+      "venue": "European Robotics Forum 2025",
+      "status": "Accepted for presentation",
+      "location": "Stuttgart, March 2025"
+    }
+  ],
+  "interests": [
+    "Hiking and mountain adventures",
+    "Travel and camping",
+    "Autonomous systems research",
+    "Open-source robotics",
+    "Sustainable technology"
+  ]
+} 

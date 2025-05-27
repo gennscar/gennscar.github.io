@@ -1,0 +1,93 @@
+Gennaro Scarati
+Barcelona, Spain | LinkedIn Profile | (+34) 672 918 951 | gennaro.scarati@outlook.com
+EXPERIENCE
+Robotics & AI Engineer, Eurecat
+
+Barcelona, Spain
+
+July 2023 – Present
+▪ Research and implement state-of-the-art robotics (path planning, localization, controls), AI and computer
+vision features (detection, segmentation, tracking). Gained extensive experience with collaborative robots
+(KUKA, Universal Robots), RGB-D and thermal cameras, NVIDIA Jetson and CUDA devices, diverse endeffectors (vacuum, magnetic, finger grippers), and various mechatronic systems.
+▪ Define robotic systems requirements and manage technical interactions with customers and suppliers to
+ensure alignment with projects specifications and technical objectives, while leading project-specific robotics
+teams (3–5 members) to meet deadlines and performance targets.
+▪ Design and develop robotics and autonomous systems for both private and publicly funded projects
+(national and European). Coordinate project proposal preparation, focusing on technical documentation, budget
+planning, resource allocation, and milestone definition.
+Key Technologies: C++, Python, Jira, ROS, ROS2, Git, OpenCV, Docker, Linux
+
+Control Systems Engineer, Dumarey Softronix
+
+Turin, Italy
+
+March 2022 – July 2023
+▪ Defined specifications and developed engine control and diagnostic systems for General Motors vehicles
+(GMC Sierra and Chevrolet Silverado, 2024–2027 models), with projected deployment on nearly 100,000 vehicles
+in 2024 alone.
+▪ Improved engine diagnostic systems using Six Sigma analysis, machine learning estimation techniques, and
+genetic programming for calibration optimization, resulting in projected cost savings of over €8 million.
+▪ Defined control systems and testing requirements in an Agile (Scrum) environment, leveraging the V-Model
+lifecycle and Model-Based Systems Engineering (MBSE) methodologies. Collaborated with cross-functional
+teams in Italy, the US, and India to meet development, calibration, and production milestones.
+▪ Developed automated testing methods for control algorithms and calibrations in simulation
+environments, complemented by test bench validation and both Software-in-the-Loop (SIL) and Hardware-inthe-Loop (HIL) testing to ensure robust system performance and reliability.
+Key Technologies: DOORS, Jira, MATLAB, Simulink, C, Python, Git, ETAS INCA, MDA
+
+EDUCATION
+Master’s Thesis Researcher, PIC4SeR – Politecnico di Torino Centre for Service Robotics
+
+Turin, Italy
+
+March 2021 – December 2021
+▪ Developed and validated an Autonomous UAV Landing Technology for precise landings on moving
+platforms, including the full design, simulation, implementation, and experimental testing of localization
+techniques (UWB and custom Kalman Filters), control algorithms, and state machines to manage all chase and
+landing phases.
+▪ Achieved centimeter-level landing precision in real-world field tests with a custom UAV and rover, following
+extensive simulations using real sensor noise data and subsequent implementation and validation of the
+developed systems in real scenarios (link to simulation, link to field tests).
+
+Master’s Degree in Mechatronic Engineering, Politecnico di Torino
+
+Turin, Italy
+
+September 2019 – December 2021
+▪ Final grade: 110 with honours/110 (GPA: 29.9/30)
+▪ Won first place at “Challenge@Polito: Artificial Intelligence” with an NLP software application that automatically
+generates concept maps from texts, which contributed to the creation of an AI startup that raised over €1.5
+million in investments.
+
+Bachelor's Degree in Mechanical Engineering, Politecnico di Torino
+
+Turin, Italy
+
+September 2016 – September 2019
+▪ Final grade: 110/110
+
+TECHNICAL CERTIFICATIONS
+▪
+
+Machine Learning
+
+Stanford University Online
+
+LANGUAGES
+▪
+▪
+▪
+▪
+
+Italian
+Native
+English Advanced (C1 IELTS Certificate – Professional working proficiency)
+Spanish Advanced (C1, Professional working proficiency)
+German Elementary Proficiency (A2)
+
+PUBLICATIONS
+▪
+
+European Robotics Forum 2025 – Advances on Affordable Hardware Platforms for Human Demonstration
+Acquisition in Agricultural Applications (Accepted for presentation at the ERF in Stuttgart, March 2025).
+
+
