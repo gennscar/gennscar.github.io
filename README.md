@@ -2,7 +2,10 @@
 
 ## 🚀 Live Website
 
-Visit the live website at: [gennaroscarati.com](https://gennaroscarati.com)
+Visit the live website at: 
+
+1. [gennscar.github.io](https://gennscar.github.io)
+2. [gennaroscarati.com](https://gennaroscarati.com)
 
 ## 🛠️ Technical Stack
 
