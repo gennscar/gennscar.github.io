@@ -1,0 +1,22 @@
+{
+  "name": "robotics-engineer-portfolio",
+  "version": "1.0.0",
+  "description": "A modern, responsive portfolio website for robotics engineers",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python3 -m http.server 8000"
+  },
+  "keywords": [
+    "portfolio",
+    "robotics",
+    "engineer",
+    "website",
+    "responsive",
+    "modern"
+  ],
+  "author": "Robotics Engineer",
+  "license": "MIT",
+  "devDependencies": {},
+  "dependencies": {}
+}
