@@ -121,7 +121,7 @@ body {
 .nav-menu {
     display: flex;
     list-style: none;
-    gap: 1.5rem;
+    gap: 0.8rem;
 }
 
 .nav-link {
@@ -131,7 +131,7 @@ body {
     transition: all 0.3s ease;
     position: relative;
     cursor: pointer;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.7rem;
     min-height: 44px;
     display: flex;
     align-items: center;
@@ -205,10 +205,19 @@ body {
     padding: 1.5rem 20px;
 }
 
+/* Justify body copy across sections */
+.content-section p {
+    text-align: justify;
+}
+
+.content-section li {
+    text-align: justify;
+}
+
 .content-title {
     font-size: 1.5rem;
     color: #ffffff;
-    margin-bottom: 2rem;
+    margin-bottom: 2.0rem;
     position: relative;
     text-align: center;
 }
@@ -278,21 +287,11 @@ body {
     color: #00d4ff;
     font-weight: 600;
     margin-bottom: 1rem;
-    height: 2rem;
-    min-height: 2rem;
     line-height: 2rem;
-    transition: opacity 0.3s ease;
-    display: flex;
-    align-items: flex-start;
+    display: block;
     width: 100%;
-    min-width: 400px;
     position: relative;
     text-align: left;
-}
-
-.personal-header .title:empty::before {
-    content: '\200B'; /* Zero-width space to maintain height when empty */
-    visibility: hidden;
 }
 
 .personal-header .header-image {
@@ -301,9 +300,10 @@ body {
     align-items: center;
 }
 
+/* Fix desktop image size semicolon */
 .personal-header .image-placeholder {
-    width: clamp(120px, 17vw, 240px);
-    height: clamp(120px, 17vw, 240px);
+    width: 230px;
+    height: 230px;
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid rgba(0, 212, 255, 0.3);
@@ -405,7 +405,7 @@ body {
 
 /* About Section Layout */
 .about-description {
-    margin-bottom: 2rem;
+    margin-bottom: 2.5rem;
     color: #e0e0e0;
 }
 
@@ -424,9 +424,9 @@ body {
 /* Skills and Languages Grid */
 .skills-languages-grid {
     display: grid;
-    grid-template-columns: 2fr 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 1.5rem;
-    align-items: start;
+    align-items: stretch;
 }
 
 /* Unified Technical Skills Box */
@@ -436,6 +436,11 @@ body {
     border-radius: 12px;
     border: 1px solid rgba(0, 212, 255, 0.2);
     transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; /* keep title at top */
+    align-items: stretch;
 }
 
 .technical-skills-unified:hover {
@@ -454,17 +459,23 @@ body {
 .all-tech-tags {
     display: flex;
     flex-wrap: wrap;
-    gap: 0.5rem;
-    justify-content: center;
+    column-gap: 0.9rem; /* horizontal spacing */
+    row-gap: 0.9rem;    /* vertical spacing */
+    justify-content: center;  /* center each row */
+    align-items: center;
+    align-content: center;    /* center group vertically within box */
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 }
 
 .tech-tag.glow-tag {
     background: rgba(0, 212, 255, 0.15);
     color: #00d4ff;
-    padding: 0.3rem 0.6rem;
-    border-radius: 15px;
-    font-size: 0.7rem;
-    font-weight: 500;
+    padding: 0.5rem 0.9rem;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 600;
     border: 1px solid rgba(0, 212, 255, 0.3);
     transition: all 0.3s ease;
     cursor: pointer;
@@ -501,10 +512,11 @@ body {
 /* Languages Section */
 .languages-section {
     background: #1a1a1a;
-    padding: 1.25rem;
+    padding: 1.5rem;
     border-radius: 12px;
     border: 1px solid rgba(0, 212, 255, 0.2);
     transition: all 0.3s ease;
+    height: 100%;
 }
 
 .languages-section:hover {
@@ -551,21 +563,26 @@ body {
 .language-level {
     padding: 0.15rem 0.5rem;
     border-radius: 10px;
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.3px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px; /* uniform badge width */
 }
 
 .language-level.native,
 .language-level.fluent,
 .language-level.intermediate,
-.language-level.basic {
+.language-level.basic,
+.language-level.conversational {
     background: linear-gradient(45deg, #00d4ff, #0099cc);
     color: #0a0a0b;
 }
 
-/* Experience Tab Styles */
+/* Experience timeline (legacy, not used in current layout) */
 .timeline {
     position: relative;
     max-width: 800px;
@@ -636,7 +653,7 @@ body {
     font-style: italic;
 }
 
-/* Caption and stacked links for experience videos */
+/* Project links caption */
 .project-links-caption {
     color: #b0b0b0;
     font-size: 0.9rem;
@@ -644,6 +661,14 @@ body {
 }
 
 .timeline-content .project-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    margin-bottom: 0.6rem;
+}
+
+/* Stack project links vertically inside experience blocks */
+.experience-subsection .project-links {
     display: grid;
     grid-template-columns: 1fr;
     gap: 0.35rem;
@@ -825,19 +850,22 @@ body {
     margin-bottom: 0.4rem;
     font-size: 1.1rem;
     font-weight: 700;
+    line-height: 1.1;
 }
 
 .education-content h4 {
     color: #ffffff;
-    margin-bottom: 0.4rem;
+    margin-top: 0;
+    margin-bottom: 0.2rem;
     font-size: 1.0rem;
-    font-weight: 600;
+    font-weight: 500;
     font-style: italic;
+    line-height: 1.1;
 }
 
 .education-date {
     color: #b0b0b0;
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     font-weight: 500;
     margin-bottom: 0.8rem;
     display: block;
@@ -1105,34 +1133,7 @@ body {
     }
 }
 
-/* Mobile Quick Links (About) */
-.mobile-quick-links {
-    display: none;
-    margin-top: 1.5rem;
-    gap: 0.6rem;
-}
-
-.mobile-quick-links a {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.4rem;
-    padding: 0.5rem 0.75rem;
-    border: 1px solid rgba(0, 212, 255, 0.2);
-    border-radius: 10px;
-    color: #e0e0e0;
-    text-decoration: none;
-    background: rgba(0, 212, 255, 0.06);
-    transition: all 0.2s ease;
-}
-
-.mobile-quick-links a i {
-    color: #00d4ff;
-}
-
-.mobile-quick-links a:hover {
-    background: rgba(0, 212, 255, 0.12);
-    transform: translateY(-1px);
-}
+/* Mobile Quick Links (About) styles removed; see override at bottom */
 
 @keyframes fadeInUp {
     from {
@@ -1150,50 +1151,34 @@ body {
     .personal-header .header-content {
         grid-template-columns: 1fr;
         text-align: center;
-        gap: 1.5rem;
+        gap: 0.25rem; /* slight space between image and name */
     }
     
     .personal-header .header-image {
-        margin-bottom: 1.2rem;
-    }
-    
-    .personal-header .header-text {
-        align-items: center;
-        text-align: center;
-        height: 180px;
+        margin-bottom: 0.25rem; /* slight space below image */
     }
     
     .personal-header .name {
-        font-size: 2.5rem;
         text-align: center;
+        margin-bottom: 0.0rem; /* match smartphone spacing */
     }
     
     .personal-header .title {
-        font-size: 1.3rem;
-        height: 1.7rem;
-        min-height: 1.7rem;
-        line-height: 1.7rem;
-        justify-content: center;
-        min-width: 300px;
-        text-align: center;
+        font-size: 1.2rem; /* slightly larger */
+    }
+
+    /* Spacing between links and Download CV */
+    .contact-info .download-cv {
+        margin-top: 0.3rem;
     }
     
-    .personal-header .image-placeholder {
-        width: clamp(110px, 20vw, 180px);
-        height: clamp(110px, 20vw, 180px);
-    }
-    
-    .contact-info {
-        flex-direction: column;
-        gap: 0.5rem;
-        align-items: center;
-        margin-top: 0.8rem;
-        min-width: auto;
+    .personal-header {
+        margin-bottom: 0; /* match smartphone spacing before About Me */
     }
     
     .skills-languages-grid {
         grid-template-columns: 1fr;
-        gap: 1.5rem;
+        gap: 1.25rem; /* align with smartphone */
     }
     
     .timeline::before {
@@ -1214,14 +1199,18 @@ body {
     .education-item {
         grid-template-columns: 1fr;
         gap: 1rem;
-        text-align: center;
+        text-align: left;
     }
     
     .publication-item {
         grid-template-columns: 1fr;
         gap: 1rem;
-        text-align: center;
+        text-align: left;
     }
+}
+
+@media (min-width: 969px) {
+    .personal-header { margin-bottom: 0.2rem; }
 }
 
 @media (max-width: 768px) {
@@ -1281,8 +1270,8 @@ body {
     }
     
     .personal-header .image-placeholder {
-        width: clamp(100px, 22vw, 160px);
-        height: clamp(100px, 22vw, 160px);
+        width: 180px;
+        height: 180px;
     }
     
     .contact-item {
@@ -1396,8 +1385,8 @@ body {
     }
     
     .personal-header .image-placeholder {
-        width: clamp(180px, 35vw, 180px);
-        height: clamp(180px, 35vw, 180px);
+        width: 180px;
+        height: 180px;
     }
     
     .personal-header .header-image {
@@ -1428,7 +1417,7 @@ body {
 
     .download-cv {
         width: 100%;
-        max-width: 320px;
+        max-width: 160px;
     }
     
     .about-description {
@@ -1445,9 +1434,7 @@ body {
         padding: 1.25rem;
     }
     
-    .all-tech-tags {
-        gap: 0.5rem;
-    }
+    .all-tech-tags { column-gap: 0.75rem; row-gap: 0.75rem; }
     
     .tech-tag.glow-tag {
         padding: 0.3rem 0.6rem;
@@ -1494,4 +1481,128 @@ body {
     .nav-logo a {
         font-size: 1.2rem;
     }
+}
+
+/* Align tablet to smartphone spacing/typography */
+@media (max-width: 968px) {
+    .personal-header .header-text {
+        height: auto;
+    }
+
+    .personal-header .name {
+        font-size: 2rem; /* match smartphone */
+    }
+
+    .personal-header .title {
+        font-size: 1.1rem; /* match smartphone */
+        height: 1.4rem;    /* match smartphone */
+        min-height: 1.4rem;/* match smartphone */
+        line-height: 1.4rem;/* match smartphone */
+        min-width: 250px;  /* match smartphone */
+        margin-bottom: 1.0rem; /* match smartphone */
+    }
+
+    .content-title { margin-bottom: 2.2rem; }
+
+    .about-description {
+        margin-top: 0.6rem;   /* match smartphone */
+        margin-bottom: 1.6rem;/* match smartphone */
+    }
+}
+
+/* Stabilize link/contact sizes and transitions */
+.nav-link, .contact-item, .project-link, .publication-link { font-size: 0.9rem; }
+@media (max-width: 968px) { .nav-link, .contact-item, .project-link, .publication-link { font-size: 0.9rem; } }
+.nav-link, .contact-item, .project-link, .publication-link { transition: color 0.3s ease, transform 0.2s ease; }
+
+@media (max-width: 968px) {
+    /* Ensure title text is centered on tablet */
+    .personal-header .title {
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+
+    /* Center the contact list and Download CV button on tablet */
+    .contact-info {
+        align-items: center;
+    }
+    .contact-info .contact-list {
+        align-items: center;
+        text-align: center;
+    }
+    .contact-info .download-cv {
+        align-self: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Stack links and button, and center them */
+    .contact-info {
+        display: flex;
+        flex-direction: column !important;
+        align-items: center !important;
+        width: 100%;
+    }
+    .contact-info .contact-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    .contact-info .download-cv {
+        display: inline-flex;
+        margin: 0.3rem auto 0 auto; /* centered and spaced below links */
+    }
+}
+
+@media (max-width: 968px) {
+    /* Match smartphone Download CV button size */
+    .contact-info .download-cv {
+        width: 100%;
+        max-width: 160px;
+    }
+
+    /* Match smartphone navbar height */
+    .nav-container {
+        height: 70px;
+    }
+}
+
+@media (max-width: 968px) {
+    /* Use smartphone top/bottom spacing in tablet */
+    .content-section { padding: 1rem 15px; }
+    .personal-header { padding: 0.5rem 0; }
+
+    /* Match smartphone navbar logo size */
+    .nav-logo a { font-size: 1.2rem; }
+}
+
+@media (max-width: 640px) {
+    /* Hide mobile quick links on smartphone */
+    .mobile-quick-links { display: none !important; }
+}
+
+@media (max-width: 968px) {
+    /* Consistent spacing under title and below Download CV on tablet */
+    .personal-header .title { margin-bottom: 1.0rem; }
+    .contact-info { margin-bottom: 1.2rem; }
+}
+
+@media (max-width: 640px) {
+    /* Consistent spacing under title and below Download CV on smartphone */
+    .personal-header .title { margin-bottom: 1.0rem; }
+    .contact-info { margin-bottom: 1.2rem; }
+}
+
+/* Hard-lock the title-to-email gap across small/tablet to prevent any shift at ~639-641px */
+@media (max-width: 968px) {
+    .personal-header .title {
+        font-size: 1.1rem !important;
+        height: 1.4rem !important;
+        line-height: 1.4rem !important;
+        margin-bottom: 1.0rem !important;
+    }
+    .contact-info { margin-top: 0 !important; }
 }
