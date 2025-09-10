@@ -1,3 +1,46 @@
+.experience-subsection {
+    background: rgba(0, 212, 255, 0.05);
+    border-left: 3px solid #00d4ff;
+    border-radius: 6px;
+    padding: 0.5rem 0.7rem;
+    margin: 0.5rem 0 0.8rem 0;
+    transition: all 0.3s ease;
+}
+
+.experience-subsection:hover {
+    background: rgba(0, 212, 255, 0.1);
+    transform: translateX(5px);
+}
+.experience-videos {
+    margin-top: 1rem;
+    background: #1a1a1a;
+    border: 1px solid rgba(0, 212, 255, 0.2);
+    border-radius: 12px;
+    padding: 1rem;
+}
+
+.experience-videos-title {
+    color: #ffffff;
+    font-size: 1.1rem;
+    margin-bottom: 0.6rem;
+    text-align: center;
+}
+
+.video-list {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.4rem;
+}
+
+.video-list .project-link i {
+    color: #00d4ff;
+}
+
+/* Enlarge YouTube icons in project links */
+.project-link i.fa-youtube {
+    font-size: 1.2rem;
+    color: #00d4ff;
+}
 /* Reset and Base Styles */
 * {
     margin: 0;
@@ -16,6 +59,24 @@ body {
     background-color: #0a0a0b;
     overflow-x: hidden;
     min-height: 100vh;
+}
+
+/* Inline highlight utility */
+.highlight-blue {
+    color: #00d4ff;
+    font-weight: 600;
+}
+
+/* Key technologies text tone-down */
+.key-tech {
+    font-size: 0.4rem;
+    color: #b0b0b0;
+    font-style: italic;
+}
+
+.key-tech strong {
+    color: inherit;
+    font-style: italic;
 }
 
 .container {
@@ -559,14 +620,34 @@ body {
 
 .timeline-content h3 {
     color: #ffffff;
-    margin-bottom: 0.4rem;
-    font-size: 1.1rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.15rem;
+    line-height: 1.1;
+    font-weight: 700;
 }
 
 .timeline-content h4 {
-    color: #00d4ff;
-    margin-bottom: 0.4rem;
-    font-size: 0.95rem;
+    color: #ffffff;
+    margin-top: 0.0rem;
+    margin-bottom: 0.25rem;
+    font-size: 1.0rem;
+    line-height: 1.1;
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Caption and stacked links for experience videos */
+.project-links-caption {
+    color: #b0b0b0;
+    font-size: 0.9rem;
+    margin: 0.3rem 0 0.4rem 0;
+}
+
+.timeline-content .project-links {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.35rem;
+    margin-bottom: 0.6rem;
 }
 
 .timeline-date {
@@ -584,6 +665,11 @@ body {
     font-size: 0.95rem;
 }
 
+/* Ensure Key Technologies text is smaller than bullets inside timeline content */
+.timeline-content .key-tech {
+    font-size: 0.8rem;
+}
+
 .timeline-content ul {
     list-style: none;
     padding-left: 0;
@@ -598,11 +684,11 @@ body {
 }
 
 .timeline-content li::before {
-    content: '▶';
+    content: '-';
     position: absolute;
     left: 0;
     color: #00d4ff;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 /* Projects Tab Styles */
@@ -675,19 +761,30 @@ body {
 }
 
 .project-link {
-    color: #00d4ff;
+    color: #ffffff;
     text-decoration: none;
-    font-weight: 500;
+    font-weight: 300;
     transition: all 0.3s ease;
     display: flex;
     align-items: center;
     gap: 0.5rem;
-    font-size: 0.9rem;
+    font-size: 0.8rem;
 }
 
 .project-link:hover {
     color: #ffffff;
     transform: translateY(-2px);
+}
+
+/* underline only text, not the icon */
+.project-link .link-text {
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.85);
+}
+
+.project-link:hover .link-text {
+    text-decoration-color: #00d4ff;
+    color: #00d4ff;
 }
 
 /* Education Tab Styles */
@@ -727,12 +824,15 @@ body {
     color: #ffffff;
     margin-bottom: 0.4rem;
     font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .education-content h4 {
-    color: #00d4ff;
+    color: #ffffff;
     margin-bottom: 0.4rem;
-    font-size: 0.95rem;
+    font-size: 1.0rem;
+    font-weight: 600;
+    font-style: italic;
 }
 
 .education-date {
@@ -764,11 +864,11 @@ body {
 }
 
 .education-content li::before {
-    content: '▶';
+    content: '•';
     position: absolute;
     left: 0;
     color: #00d4ff;
-    font-size: 0.8rem;
+    font-size: 1rem;
 }
 
 .certifications-list {
@@ -1218,7 +1318,7 @@ body {
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 640px) {
     .content-section {
         padding: 1rem 15px;
     }
