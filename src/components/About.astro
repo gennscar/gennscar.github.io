@@ -1,0 +1,60 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section id="about" class="p-8 sm:p-12 md:p-16 lg:p-24">
+  <div>
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-16 items-start">
+      <div class="lg:col-span-4">
+        <h2
+          class="text-3xl sm:text-3xl md:text-4xl xl:text-5xl font-bold text-gray-900"
+        >
+          About Me
+        </h2>
+        <div
+          class="w-[75px] h-[5px] mt-2 rounded-full"
+          style={`background-color: ${siteConfig.accentColor}`}
+        >
+        </div>
+      </div>
+
+      <div class="lg:col-span-8 space-y-8">
+        <p class="text-base sm:text-base md:text-base lg:text-lg xl:text-2xl leading-relaxed text-gray-600">
+          {siteConfig.aboutMe}
+        </p>
+
+        <div class="pt-4">
+          <h3 class="text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl font-semibold tracking-wide text-gray-500">Technical skills</h3>
+          <div class="mt-2 flex flex-wrap gap-3">
+            {
+              siteConfig.skills.map((skill) => (
+                <span class="px-3 sm:px-4 py-1.5 sm:py-2 bg-gray-100 text-gray-800 rounded-full text-sm sm:text-base md:text-base lg:text-sm xl:text-xl font-medium hover:bg-gray-200 transition-colors duration-200">
+                  {skill}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+
+        {siteConfig.languages && siteConfig.languages.length > 0 && (
+          <div class="pt-6">
+            <h3 class="text-base sm:text-lg md:text-lg lg:text-lg xl:text-xl font-semibold tracking-wide text-gray-500">Languages</h3>
+            <div class="mt-3 max-w-xl xl:max-w-2xl rounded-xl border border-gray-200 bg-white/60 divide-y divide-gray-200">
+              {siteConfig.languages.map((lang) => (
+                <div class="flex items-center justify-between px-3 py-2">
+                  <div class="flex items-center gap-2">
+                    <span class="inline-block w-1.5 h-1.5 rounded-full" style={`background-color: ${siteConfig.accentColor}`}></span>
+                    <span class="text-sm sm:text-base md:text-base lg:text-sm xl:text-xl font-medium text-gray-800">{lang.name}</span>
+                  </div>
+                  <span class="inline-flex items-center justify-center w-[18ch] sm:w-[24ch] md:w-[28ch] xl:w-[30ch] text-center rounded-full border border-gray-300 bg-gray-50 px-3 py-1 text-xs sm:text-sm md:text-sm lg:text-sm xl:text-base text-gray-600">
+                    {lang.level}
+                  </span>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+      </div>
+    </div>
+  </div>
+</section>

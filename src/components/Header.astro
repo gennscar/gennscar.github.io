@@ -1,0 +1,349 @@
+---
+import { siteConfig } from "../config";
+
+const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+const hasEducation = siteConfig.education && siteConfig.education.length > 0;
+const hasPublications = siteConfig.publications && siteConfig.publications.length > 0;
+// const hasHobbies = siteConfig.hobbies && siteConfig.hobbies.length > 0;
+---
+
+<header
+  id="header"
+  class="fixed top-0 left-0 right-0 z-50 transition-all duration-300"
+>
+  <div class="max-w-7xl mx-auto px-8 py-2 md:py-4 flex items-center">
+    <!-- Desktop Navigation -->
+    <nav class="hidden md:block w-full">
+      <ul class="flex items-center gap-8 justify-center">
+        <li>
+          <a
+            href="#about"
+            class="nav-link md:text-lg lg:text-xl text-gray-700 hover:text-black transition-colors font-medium"
+            data-section="about"
+          >
+            About
+          </a>
+        </li>
+        {
+          hasExperience && (
+            <li>
+              <a
+                href="#experience"
+                class="nav-link md:text-lg lg:text-xl text-gray-700 hover:text-black transition-colors font-medium"
+                data-section="experience"
+              >
+                Experience
+              </a>
+            </li>
+          )
+        }
+          {
+            hasEducation && (
+              <li>
+                <a
+                  href="#education"
+                  class="nav-link md:text-lg lg:text-xl text-gray-700 hover:text-black transition-colors font-medium"
+                  data-section="education"
+                >
+                  Education
+                </a>
+              </li>
+            )
+          }
+        {
+          hasProjects && (
+            <li>
+              <a
+                href="#projects"
+                class="nav-link md:text-lg lg:text-xl text-gray-700 hover:text-black transition-colors font-medium"
+                data-section="projects"
+              >
+                Projects
+              </a>
+            </li>
+          )
+        }
+          {
+            hasPublications && (
+              <li>
+                <a
+                  href="#publications"
+                  class="nav-link md:text-lg lg:text-xl text-gray-700 hover:text-black transition-colors font-medium"
+                  data-section="publications"
+                >
+                  Publications
+                </a>
+              </li>
+            )
+          }
+          {/* {
+            hasHobbies && (
+              <li>
+                <a
+                  href="#hobbies"
+                  class="nav-link md:text-lg lg:text-xl text-gray-700 hover:text-black transition-colors font-medium"
+                  data-section="hobbies"
+                >
+                  Hobbies
+                </a>
+              </li>
+            )
+          } */}
+        </ul>
+      </nav>
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden w-full flex justify-end">
+      <button
+        id="mobile-menu-button"
+        class="p-2 text-gray-700 hover:text-black focus:outline-none"
+        aria-label="Open menu"
+      >
+        <svg
+          class="h-6 w-6"
+          fill="none"
+          viewBox="0 0 24 24"
+          stroke="currentColor"
+        >
+          <path
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="M4 6h16M4 12h16m-7 6h7"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Mobile Sidebar Menu -->
+<div
+  id="mobile-menu"
+  class="fixed top-0 right-0 h-full w-64 bg-white shadow-lg z-50 transform translate-x-full transition-transform duration-300 ease-in-out md:hidden"
+>
+  <div class="p-4 flex justify-end">
+    <button
+      id="close-menu-button"
+      class="p-2 text-gray-700 hover:text-black focus:outline-none"
+      aria-label="Close menu"
+    >
+      <svg
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="2"
+          d="M6 18L18 6M6 6l12 12"></path>
+      </svg>
+    </button>
+  </div>
+  <nav>
+    <ul class="flex flex-col items-start p-4 space-y-4">
+      <li>
+        <a
+          href="#about"
+          class="nav-link text-lg text-gray-700 hover:text-black transition-colors font-medium mobile-nav-link"
+          data-section="about"
+        >
+          About
+        </a>
+      </li>
+      {
+        hasExperience && (
+          <li>
+            <a
+              href="#experience"
+              class="nav-link text-lg text-gray-700 hover:text-black transition-colors font-medium mobile-nav-link"
+              data-section="experience"
+            >
+              Experience
+            </a>
+          </li>
+        )
+      }
+        {
+          hasEducation && (
+            <li>
+              <a
+                href="#education"
+                class="nav-link text-lg text-gray-700 hover:text-black transition-colors font-medium mobile-nav-link"
+                data-section="education"
+              >
+                Education
+              </a>
+            </li>
+          )
+        }
+      {
+        hasProjects && (
+          <li>
+            <a
+              href="#projects"
+              class="nav-link text-lg text-gray-700 hover:text-black transition-colors font-medium mobile-nav-link"
+              data-section="projects"
+            >
+              Projects
+            </a>
+          </li>
+        )
+      }
+        {
+          hasPublications && (
+            <li>
+              <a
+                href="#publications"
+                class="nav-link text-lg text-gray-700 hover:text-black transition-colors font-medium mobile-nav-link"
+                data-section="publications"
+              >
+                Publications
+              </a>
+            </li>
+          )
+        }
+        {/* {
+          hasHobbies && (
+            <li>
+              <a
+                href="#hobbies"
+                class="nav-link text-lg text-gray-700 hover:text-black transition-colors font-medium mobile-nav-link"
+                data-section="hobbies"
+              >
+                Hobbies
+              </a>
+            </li>
+          )
+        } */}
+      </ul>
+    </nav>
+</div>
+<!-- Backdrop -->
+<div
+  id="backdrop"
+  class="fixed inset-0 bg-black/5 backdrop-blur-sm z-40 hidden md:hidden"
+>
+</div>
+
+<script>
+  // Set CSS custom property for accent color
+  document.documentElement.style.setProperty('--accent-color', '${siteConfig.accentColor}');
+
+  // Header background on scroll
+  window.addEventListener("scroll", () => {
+    const header = document.getElementById("header");
+    if (window.scrollY > 100) {
+      header?.classList.add("bg-white/80", "backdrop-blur-sm", "shadow-sm");
+    } else {
+      header?.classList.remove("bg-white/80", "backdrop-blur-sm", "shadow-sm");
+    }
+  });
+
+  // Scroll spy functionality
+  const sections = ['hero', 'about', 'experience', 'education', 'projects', 'publications'/*, 'hobbies'*/];
+  const navLinks = document.querySelectorAll('.nav-link');
+  
+  const updateActiveNavLink = () => {
+    let current = '';
+    const offset = 150; // Trigger when section is 150px from top
+    
+    // Check which section is currently in view
+    for (const section of sections) {
+      const element = document.getElementById(section);
+      if (element) {
+        const rect = element.getBoundingClientRect();
+        // Section is considered active if its top is at or above the offset point
+        // and its bottom is below the offset point (section is passing through the trigger line)
+        if (rect.top <= offset && rect.bottom > offset) {
+          current = section;
+          // Don't break - continue to find the last section that meets criteria
+        }
+      }
+    }
+    
+    // If no section meets the criteria, find the one closest to the offset
+    if (!current) {
+      let closestDistance = Infinity;
+      for (const section of sections) {
+        const element = document.getElementById(section);
+        if (element) {
+          const rect = element.getBoundingClientRect();
+          const distance = Math.abs(rect.top - offset);
+          if (distance < closestDistance) {
+            closestDistance = distance;
+            current = section;
+          }
+        }
+      }
+    }
+    
+    // Update nav links
+    navLinks.forEach(link => {
+      link.classList.remove('active');
+      if (link.getAttribute('data-section') === current) {
+        link.classList.add('active');
+      }
+    });
+  };
+
+  // Listen for scroll events
+  window.addEventListener('scroll', updateActiveNavLink);
+  // Set initial active state
+  updateActiveNavLink();
+
+  // Mobile menu functionality
+  const mobileMenuButton = document.getElementById("mobile-menu-button");
+  const closeMenuButton = document.getElementById("close-menu-button");
+  const mobileMenu = document.getElementById("mobile-menu");
+  const backdrop = document.getElementById("backdrop");
+  const mobileNavLinks = document.querySelectorAll(".mobile-nav-link");
+
+  const openMenu = () => {
+    mobileMenu?.classList.remove("translate-x-full");
+    mobileMenu?.classList.add("translate-x-0");
+    backdrop?.classList.remove("hidden");
+  };
+
+  const closeMenu = () => {
+    mobileMenu?.classList.add("translate-x-full");
+    mobileMenu?.classList.remove("translate-x-0");
+    backdrop?.classList.add("hidden");
+  };
+
+  mobileMenuButton?.addEventListener("click", openMenu);
+  closeMenuButton?.addEventListener("click", closeMenu);
+  backdrop?.addEventListener("click", closeMenu);
+  mobileNavLinks.forEach((link) => {
+    link.addEventListener("click", closeMenu);
+  });
+</script>
+
+<style>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Active navigation link styles */
+  .nav-link.active {
+    color: var(--accent-color, #1d4ed8) !important;
+    font-weight: 600;
+  }
+  
+  /* Add a subtle underline for active desktop nav links */
+  .nav-link.active:not(.mobile-nav-link) {
+    position: relative;
+  }
+  
+  .nav-link.active:not(.mobile-nav-link)::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: var(--accent-color, #1d4ed8);
+    border-radius: 1px;
+  }
+</style>

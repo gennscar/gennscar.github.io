@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+/* Cross-platform normalization */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  /* Prevent iOS text size adjust after orientation change */
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  
+  /* Smooth scrolling */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'IBM Plex Mono', monospace;
+  /* Ensure consistent font rendering across platforms */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  
+  /* Prevent layout shifts */
+  margin: 0;
+  padding: 0;
+  
+  /* Consistent line height */
+  line-height: 1.5;
+}

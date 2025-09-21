@@ -1,0 +1,413 @@
+---
+import { siteConfig } from "../config";
+---
+
+<section
+  id="hero"
+  class="relative min-h-[52vh] sm:min-h-screen flex items-end px-8 py-8 sm:p-12 md:p-16 lg:p-24"
+  style={`--accent-color: ${siteConfig.accentColor}`}
+>
+  <!-- Gradient overlay -->
+  <div
+    class="absolute inset-0 -z-10"
+    style={`background: radial-gradient(ellipse 800px 1200px at 0% 0%, ${siteConfig.accentColor}40 0%, ${siteConfig.accentColor}25 20%, ${siteConfig.accentColor}10 40%, rgba(255, 255, 255, 0.3) 70%, rgba(255, 255, 255, 0.8) 90%, white 100%)`}
+  >
+  </div>
+  <div class="w-full pt-8 md:pt-8 lg:pt-12 xl:pt-16">
+    <div class="hero-grid">
+      <!-- Main Content -->
+      <div class="hero-main">
+        <div class="hero-text">
+          <h2 class="hero-greeting animate-fade-in">Hi!</h2>
+          <h1 class="hero-name animate-fade-in animation-delay-200">
+            I'm <span style={{ color: siteConfig.accentColor }} class="hero-name-highlight">
+              {siteConfig.name}
+            </span>
+          </h1>
+          <p class="hero-title animate-fade-in animation-delay-400">
+            {siteConfig.title}
+          </p>
+        </div>
+        
+        {siteConfig.avatar && (
+          <div class="hero-avatar">
+            <img
+              src={siteConfig.avatar}
+              alt="Avatar"
+              class="hero-image animate-fade-in animation-delay-300"
+            />
+          </div>
+        )}
+      </div>
+      
+      <!-- Social Icons -->
+      <div class="hero-social animate-fade-in animation-delay-600">
+    {
+      siteConfig.social?.email && (
+        <a
+          href={`mailto:${siteConfig.social.email}`}
+          aria-label="Email"
+          class="email-link relative transition-colors duration-300 hover:text-[var(--accent-color)]"
+          style={`--accent-color: ${siteConfig.accentColor}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 lg:h-11 lg:w-11 xl:w-14 xl:h-14"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 7a2 2 0 0 1 2 -2h14a2 2 0 0 1 2 2v10a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-10z" />
+            <path d="M3 7l9 6l9 -6" />
+          </svg>
+          <span class="email-tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300 whitespace-nowrap">
+            Send email
+          </span>
+        </a>
+      )
+    }
+    {
+      siteConfig.social?.linkedin && (
+        <a
+          href={siteConfig.social.linkedin}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          class="linkedin-link relative transition-colors duration-300 hover:text-[var(--accent-color)]"
+          style={`--accent-color: ${siteConfig.accentColor}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 lg:h-11 lg:w-11 xl:w-14 xl:h-14"
+          >
+            <>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M8 11v5" />
+              <path d="M8 8v.01" />
+              <path d="M12 16v-5" />
+              <path d="M16 16v-3a2 2 0 1 0 -4 0" />
+              <path d="M3 7a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v10a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z" />
+            </>
+          </svg>
+          <span class="linkedin-tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300 whitespace-nowrap">
+            View LinkedIn
+          </span>
+        </a>
+      )
+    }
+    {
+      siteConfig.social?.github && (
+        <a
+          href={siteConfig.social.github}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="GitHub"
+          class="github-hero-link relative transition-colors duration-300 hover:text-[var(--accent-color)]"
+          style={`--accent-color: ${siteConfig.accentColor}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 lg:h-11 lg:w-11 xl:w-14 xl:h-14"
+          >
+            <>
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
+            </>
+          </svg>
+          <span class="github-hero-tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300 whitespace-nowrap">
+            View GitHub
+          </span>
+        </a>
+      )
+    }
+    {
+      siteConfig.cv && (
+        <a
+          href={siteConfig.cv}
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Download CV"
+          class="cv-link relative transition-colors duration-300 hover:text-[var(--accent-color)]"
+          style={`--accent-color: ${siteConfig.accentColor}`}
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="h-8 w-8 sm:h-9 sm:w-9 md:h-10 md:w-10 lg:h-11 lg:w-11 xl:w-14 xl:h-14"
+          >
+            <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+            <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+            <path d="M17 21h-10a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v11a2 2 0 0 1 -2 2z" />
+            <path d="M11 12.5a1.5 1.5 0 0 0 -3 0v3a1.5 1.5 0 0 0 3 0" />
+            <path d="M13 11l1.5 6l1.5 -6" />
+          </svg>
+          <span class="cv-tooltip absolute -top-10 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 transition-opacity duration-300 whitespace-nowrap">
+            Download CV
+          </span>
+        </a>
+      )
+    }
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<style>
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .animate-fade-in {
+    animation: fadeIn 0.8s ease-out forwards;
+    opacity: 0;
+  }
+
+  .animation-delay-200 {
+    animation-delay: 0.2s;
+  }
+
+  .animation-delay-300 {
+    animation-delay: 0.3s;
+  }
+
+  .animation-delay-400 {
+    animation-delay: 0.4s;
+  }
+
+  .animation-delay-600 {
+    animation-delay: 0.6s;
+  }
+
+  .email-link:hover .email-tooltip {
+    opacity: 1;
+  }
+  
+  .linkedin-link:hover .linkedin-tooltip {
+    opacity: 1;
+  }
+  
+  .github-hero-link:hover .github-hero-tooltip {
+    opacity: 1;
+  }
+  
+  .cv-link:hover .cv-tooltip {
+    opacity: 1;
+  }
+
+  /* Cross-platform consistency */
+  #hero {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  .hero-grid {
+    display: grid;
+    gap: 0.75rem;
+    grid-template-rows: 1fr auto;
+    min-height: 35vh;
+  }
+
+  .hero-main {
+    display: grid;
+    gap: 1.5rem;
+    align-items: center;
+    text-align: center;
+  }
+
+  .hero-text {
+    order: 2;
+  }
+
+  .hero-avatar {
+    order: 1;
+    justify-self: center;
+  }
+
+  .hero-image {
+    width: clamp(8.5rem, 23vw, 13.5rem);
+    height: clamp(8.5rem, 23vw, 13.5rem);
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .hero-greeting {
+    font-size: clamp(1.75rem, 5vw, 2.75rem);
+    font-weight: 700;
+    color: rgb(55 65 81);
+    margin: 0rem 0 0.75rem 0;
+    line-height: 1.2;
+  }
+
+  .hero-name {
+    font-size: clamp(2rem, 5.8vw, 3.1rem);
+    font-weight: 700;
+    color: rgb(31 41 55);
+    margin: 0 0 1rem 0;
+    line-height: 1.1;
+  }
+
+  .hero-name-highlight {
+    white-space: break-word;
+  }
+
+  .hero-title {
+    font-size: clamp(1.2rem, 3.8vw, 1.7rem);
+    font-weight: 500;
+    color: rgb(75 85 99);
+    margin: 0 0 1.5rem 0;
+    line-height: 1.4;
+  }
+
+  .hero-social {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    align-items: center;
+    flex-wrap: wrap;
+    color: rgb(55 65 81); /* gray-700, same as "Hi!" */
+  }
+
+  .hero-icon {
+    width: clamp(1.5rem, 4vw, 2rem);
+    height: clamp(1.5rem, 4vw, 2rem);
+  }
+
+  /* Tablet and Desktop */
+  @media (min-width: 768px) {
+    .hero-grid {
+      gap: 8rem;
+      min-height: 55vh;
+      grid-template-rows: auto 1fr;
+    }
+
+    .hero-main {
+      grid-template-columns: 1fr auto;
+      text-align: left;
+      gap: 3rem;
+    }
+
+    .hero-text {
+      order: 1;
+    }
+
+    .hero-avatar {
+      order: 2;
+      justify-self: end;
+    }
+
+    .hero-image {
+      width: clamp(14rem, 15vw, 18rem);
+      height: clamp(14rem, 15vw, 18rem);
+    }
+
+    .hero-greeting {
+      font-size: clamp(2.5rem, 4vw, 3.5rem);
+    }
+
+    .hero-name {
+      font-size: clamp(3rem, 5vw, 4.5rem);
+    }
+
+    .hero-title {
+      font-size: clamp(1.25rem, 2.5vw, 2rem);
+    }
+
+    .hero-social {
+      justify-content: flex-start;
+      gap: 2rem;
+    }
+  }
+
+  /* Large Desktop */
+  @media (min-width: 1024px) {
+    .hero-grid {
+      gap: 8rem;
+    }
+
+    .hero-main {
+      gap: 4rem;
+    }
+
+    .hero-name {
+      font-size: clamp(2.75rem, 4.75vw, 6rem);
+    }
+
+    .hero-image {
+      width: clamp(16rem, 20vw, 22rem);
+      height: clamp(16rem, 20vw, 22rem);
+    }
+  }
+
+  /* Extra Large Desktop */
+  @media (min-width: 1280px) {
+    .hero-grid {
+      gap: 12rem;
+    }
+
+    .hero-greeting {
+      font-size: clamp(3rem, 4.5vw, 4.2rem);
+    }
+
+    .hero-title {
+      font-size: clamp(1.5rem, 3vw, 2.7rem);
+    }
+
+    .hero-social {
+      gap: 2.5rem;
+    }
+  }
+
+
+
+  /* Prevent layout issues on very small screens */
+  @media (max-height: 600px) and (min-width: 768px) {
+    .hero-content {
+      min-height: auto;
+      padding: 2rem;
+    }
+    
+    .hero-grid {
+      min-height: auto;
+    }
+  }
+</style>
