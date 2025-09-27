@@ -34,7 +34,7 @@ export const siteConfig = {
     {
       name: "Single and Dual-Arm Robotic System for Cucumber Harvesting",
       description: [
-        "A modular, multi-arm robotic system for automated cucumber harvesting, integrating perception, task planning, and control pipelines orchestrated by Behavior Trees, achieving under 3% error in cucumber pose and size estimation.",
+        "A modular, multi-arm robotic system for automated cucumber harvesting, integrating perception, task planning, and control pipelines orchestrated by Behavior Trees, achieving sub-centimeter accuracy for cucumber pose and size estimation.",
         "Initially validated in controlled lab environments, the system was then extended to other crops and successfully deployed in real-field scenarios."
       ],
       link: "",
@@ -137,8 +137,8 @@ export const siteConfig = {
       dateRange: "July 2023 - Present",
       bullets: [
         "Develop and deploy robotics and AI software modules for industrial and agricultural robots.",
-        "Achieved a 50% reduction in development time for dexterous manipulation pipelines by integrating custom task planning modules within behavior trees.",
-        "Designed a real-time perception pipeline for detection, segmentation, tracking, 6D pose, and size estimation with under 3% error, adopted by multiple internal robotics teams.",
+        "Implemented modular behavior trees orchestrating optimally planned high-level tasks, reducing development time for dexterous manipulation pipelines by 50%.",
+        "Designed a real-time perception pipeline for detection, segmentation, tracking, 6D pose, and size estimation, achieving sub-centimeter accuracy for pose and size.",
         "Train and implement learning-from-demonstration pipelines (VLAs, Diffusion Policies) to solve dexterous manipulation tasks, such as fruit harvesting and industrial assembly.",
       ],
       skills: [
