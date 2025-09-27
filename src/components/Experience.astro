@@ -106,7 +106,7 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                       <div class="pt-3 flex items-center gap-6">
                         <a
                           href="#projects"
-                          onclick="setTimeout(() => { const projectElement = Array.from(document.querySelectorAll('h3')).find(h => h.textContent.includes('Autonomous Drone Landing on Moving UGVs')); if (projectElement) projectElement.scrollIntoView({behavior: 'smooth'}); }, 100);"
+                          onclick="setTimeout(() => { const projectElement = Array.from(document.querySelectorAll('h3')).find(h => h.textContent.includes('Autonomous Drone Landing on Moving UGVs')); if (projectElement) { const elementTop = projectElement.getBoundingClientRect().top + window.scrollY; window.scrollTo({top: elementTop - 110, behavior: 'smooth'}); } }, 100);"
                           class="project-link relative text-gray-600 transition-colors duration-300 hover:text-black group"
                           aria-label="Go to Related Project"
                         >

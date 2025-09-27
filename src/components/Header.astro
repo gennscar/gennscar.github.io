@@ -318,6 +318,28 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
   mobileNavLinks.forEach((link) => {
     link.addEventListener("click", closeMenu);
   });
+
+  // Custom scroll behavior for navigation links with offset on mobile
+  const allNavLinks = document.querySelectorAll('.nav-link, .mobile-nav-link');
+  allNavLinks.forEach(link => {
+    link.addEventListener('click', (e) => {
+      const href = link.getAttribute('href');
+      if (href && href.startsWith('#')) {
+        e.preventDefault();
+        const targetId = href.substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          const elementTop = targetElement.getBoundingClientRect().top + window.scrollY;
+          const isMobile = window.innerWidth < 768; // Tailwind's md breakpoint
+          const offset = isMobile ? 50 : 0;
+          window.scrollTo({
+            top: elementTop - offset,
+            behavior: 'smooth'
+          });
+        }
+      }
+    });
+  });
 </script>
 
 <style>
