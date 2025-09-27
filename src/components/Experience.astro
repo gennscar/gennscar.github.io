@@ -101,6 +101,38 @@ const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
                         ))}
                       </div>
                     )}
+
+                    {exp.title.includes("Master's Thesis Researcher in Robotics") && (
+                      <div class="pt-3 flex items-center gap-6">
+                        <a
+                          href="#projects"
+                          onclick="setTimeout(() => { const projectElement = Array.from(document.querySelectorAll('h3')).find(h => h.textContent.includes('Autonomous Drone Landing on Moving UGVs')); if (projectElement) projectElement.scrollIntoView({behavior: 'smooth'}); }, 100);"
+                          class="project-link relative text-gray-600 transition-colors duration-300 hover:text-black group"
+                          aria-label="Go to Related Project"
+                        >
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="32"
+                            height="32"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            class="h-8 w-8 sm:h-9 sm:w-9 md:h-9 md:w-9 lg:h-9 lg:w-9 xl:h-11 xl:w-11"
+                          >
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <path d="M3 12a9 9 0 1 0 18 0a9 9 0 0 0 -18 0" />
+                            <path d="M15 9l-6 6" />
+                            <path d="M15 15v-6h-6" />
+                          </svg>
+                          <span class="absolute -top-8 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white text-xs px-2 py-1 rounded opacity-0 group-hover:opacity-100 transition-opacity duration-300 whitespace-nowrap z-50">
+                            Go to Project
+                          </span>
+                        </a>
+                      </div>
+                    )}
                   </div>
                 </div>
               ))}
