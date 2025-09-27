@@ -58,13 +58,13 @@ const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
                         }
 
                         {Array.isArray(project.description) ? (
-                          <div class="text-base sm:text-base md:text-base lg:text-lg xl:text-xl text-gray-600 leading-relaxed space-y-2">
+                          <div class="text-sm sm:text-base md:text-base lg:text-base xl:text-xl text-gray-600 leading-relaxed space-y-2">
                             {project.description.map((line) => (
                               <p class="leading-relaxed">{line}</p>
                             ))}
                           </div>
                         ) : (
-                          <p class={`text-base sm:text-base md:text-base lg:text-lg xl:text-xl text-gray-600 leading-relaxed`}>
+                          <p class={`text-sm sm:text-base md:text-base lg:text-base xl:text-xl text-gray-600 leading-relaxed`}>
                             {project.description}
                           </p>
                         )}
