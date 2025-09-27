@@ -137,7 +137,7 @@ export const siteConfig = {
       dateRange: "July 2023 - Present",
       bullets: [
         "Develop and deploy robotics and AI software modules for industrial and agricultural robots.",
-        "Implemented modular behavior trees orchestrating optimally planned high-level tasks, reducing development time for dexterous manipulation pipelines by 50%.",
+        "Developed modular behavior trees orchestrating high-level dexterous manipulation tasks, reducing development time by 50%, while improving trajectory optimality and feasibility.",
         "Designed a real-time perception pipeline for detection, segmentation, tracking, 6D pose, and size estimation, achieving sub-centimeter accuracy for pose and size.",
         "Train and implement learning-from-demonstration pipelines (VLAs, Diffusion Policies) to solve dexterous manipulation tasks, such as fruit harvesting and industrial assembly.",
       ],
