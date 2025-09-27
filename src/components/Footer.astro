@@ -14,7 +14,13 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
     >
       <div class="flex flex-col gap-4">
         <h3 class="text-2xl xl:text-3xl font-bold text-gray-800">
-          {siteConfig.name}
+          <a 
+            href="#hero" 
+            class="hover:text-gray-600 transition-colors duration-300 cursor-pointer"
+            onclick="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});"
+          >
+            {siteConfig.name}
+          </a>
         </h3>
         <p class="text-base xl:text-lg text-gray-600">
           {siteConfig.title}

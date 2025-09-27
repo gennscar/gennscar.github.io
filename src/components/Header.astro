@@ -92,8 +92,19 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
           } */}
         </ul>
       </nav>
-    <!-- Mobile Menu Button -->
-    <div class="md:hidden w-full flex justify-end">
+    <!-- Mobile Header with Name and Menu Button -->
+    <div class="md:hidden w-full flex justify-between items-center">
+      <!-- Mobile Name (only visible when scrolled past hero) -->
+      <a
+        id="mobile-name-link"
+        href="#hero"
+        class="text-base font-bold transition-all duration-300 opacity-0 transform translate-x-[-20px] hover:opacity-80"
+        style={`color: ${siteConfig.accentColor}`}
+        onclick="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});"
+      >
+        {siteConfig.name}
+      </a>
+      
       <button
         id="mobile-menu-button"
         class="p-2 text-gray-700 hover:text-black focus:outline-none"
@@ -231,13 +242,26 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
   // Set CSS custom property for accent color
   document.documentElement.style.setProperty('--accent-color', '${siteConfig.accentColor}');
 
-  // Header background on scroll
+  // Header background and mobile name visibility on scroll
   window.addEventListener("scroll", () => {
     const header = document.getElementById("header");
+    const mobileNameLink = document.getElementById("mobile-name-link");
+    const heroSection = document.getElementById("hero");
+    
     if (window.scrollY > 100) {
       header?.classList.add("bg-white/80", "backdrop-blur-sm", "shadow-sm");
+      
+      // Show mobile name when past hero section
+      if (heroSection && window.scrollY > heroSection.offsetHeight * 0.7) {
+        mobileNameLink?.classList.remove("opacity-0", "translate-x-[-20px]");
+        mobileNameLink?.classList.add("opacity-100", "translate-x-0");
+      }
     } else {
       header?.classList.remove("bg-white/80", "backdrop-blur-sm", "shadow-sm");
+      
+      // Hide mobile name when in hero section
+      mobileNameLink?.classList.add("opacity-0", "translate-x-[-20px]");
+      mobileNameLink?.classList.remove("opacity-100", "translate-x-0");
     }
   });
 
