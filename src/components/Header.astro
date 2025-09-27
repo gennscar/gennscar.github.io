@@ -98,7 +98,7 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
       <a
         id="mobile-name-link"
         href="#hero"
-        class="text-base font-bold transition-all duration-300 opacity-0 transform translate-x-[-20px] hover:opacity-80"
+        class="text-base font-bold transition-all duration-300 mobile-name-hidden hover:opacity-80"
         style={`color: ${siteConfig.accentColor}`}
         onclick="event.preventDefault(); window.scrollTo({top: 0, behavior: 'smooth'});"
       >
@@ -258,12 +258,12 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
     // Handle mobile name visibility separately
     if (heroSection && window.scrollY > heroSection.offsetHeight * 0.7) {
       // Show mobile name when past 70% of hero section
-      mobileNameLink?.classList.remove("opacity-0", "translate-x-[-20px]");
-      mobileNameLink?.classList.add("opacity-100", "translate-x-0");
+      mobileNameLink?.classList.remove("mobile-name-hidden");
+      mobileNameLink?.classList.add("mobile-name-visible");
     } else {
       // Hide mobile name when in or near hero section
-      mobileNameLink?.classList.add("opacity-0", "translate-x-[-20px]");
-      mobileNameLink?.classList.remove("opacity-100", "translate-x-0");
+      mobileNameLink?.classList.remove("mobile-name-visible");
+      mobileNameLink?.classList.add("mobile-name-hidden");
     }
   });
 
@@ -393,5 +393,18 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
     height: 2px;
     background-color: var(--accent-color, #1d4ed8);
     border-radius: 1px;
+  }
+  
+  /* Mobile name visibility states */
+  .mobile-name-hidden {
+    opacity: 0;
+    transform: translateX(-20px);
+    pointer-events: none;
+  }
+  
+  .mobile-name-visible {
+    opacity: 1;
+    transform: translateX(0);
+    pointer-events: auto;
   }
 </style>
