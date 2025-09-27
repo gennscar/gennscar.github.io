@@ -42,8 +42,8 @@ import { siteConfig } from "../config";
             <div class="mt-3 space-y-2 max-w-md">
               {siteConfig.languages.map((lang) => (
                 <div class="flex items-center justify-between px-4 py-3 bg-white rounded-lg border border-gray-200 shadow-sm">
-                  <span class="text-sm sm:text-base md:text-base lg:text-sm xl:text-xl font-medium text-gray-800">{lang.name}</span>
-                  <span class="inline-flex items-center justify-center w-[215px] text-center text-xs sm:text-sm md:text-sm lg:text-sm xl:text-base text-gray-600 bg-gray-50 px-3 py-1 rounded-full border border-gray-300">
+                  <span class="text-sm sm:text-base md:text-base lg:text-sm xl:text-xl font-medium text-gray-800 flex-1 min-w-0 mr-3">{lang.name}</span>
+                  <span class="inline-flex items-center justify-center w-[160px] sm:w-[215px] md:w-[215px] lg:w-[215px] xl:w-[215px] text-center text-xs sm:text-sm md:text-sm lg:text-sm xl:text-base text-gray-600 bg-gray-50 px-2 py-1 rounded-full border border-gray-300 flex-shrink-0">
                     {lang.level}
                   </span>
                 </div>
