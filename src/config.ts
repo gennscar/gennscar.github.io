@@ -80,7 +80,7 @@ export const siteConfig = {
     {
       name: "Autonomous Drone Landing on Moving UGVs",
       description: [
-        "An autonomous UAV landing system achieving centimeter-level precision on moving UGVs, using an EKF-based localization pipeline integrating drone, UGV, and UWB data.",
+        "An autonomous drone landing system achieving centimeter-level precision on moving UGVs, using an EKF-based localization pipeline integrating drone, UGV, and UWB data.",
         "Designed perception, pose estimation, control, and state machine pipelines for chase and landing, validated through Gazebo simulations and real-world field tests."
       ],
       link: "",
@@ -170,9 +170,9 @@ export const siteConfig = {
       location: "Turin, Italy",
       dateRange: "Mar 2021 - Dec 2021",
       bullets: [
-  "Developed an autonomous UAV landing system achieving centimeter-level precision on moving UGVs in real-world scenarios.",
+  "Developed an autonomous drone landing system achieving centimeter-level precision on moving UGVs in real-world scenarios.",
   "Designed the complete landing pipeline, integrating UWB localization, perception modules, and control systems.",
-  "Implemented a robust EKF-based localization pipeline fusing UWB, UAV, and UGV data, achieving position errors under 5 cm during chase and landing maneuvers.",
+  "Implemented a robust EKF-based localization pipeline fusing UWB, drone, and UGV data, achieving position errors under 5 cm during chase and landing maneuvers.",
   "Validated the system through Gazebo simulations and real-world field tests, proving precise and reliable landing under dynamic conditions."
       ],
       skills: ["Python", "C++", "ROS2", "Gazebo", "MATLAB", "Simulink", "Git"],
