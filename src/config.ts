@@ -11,7 +11,7 @@ export const siteConfig = {
     github: "https://github.com/gennscar",
   },
   aboutMe:
-    "I am a Robotics and AI engineer passionate about creating systems that move, sense, and learn. My background spans robotics, control systems, and artificial intelligence, with experience in both startups and large-scale production environments. I’d describe myself as a very curious person, always eager to learn new things and stay updated with the latest technologies. In my free time, I enjoy hiking and exploring new places on foot.",
+    "I am a Robotics and AI engineer passionate about creating systems that move, sense, and learn. My background spans robotics, control systems, computer vision, and artificial intelligence, with experience in both startups and large-scale production environments. I’d describe myself as a very curious person, always eager to learn new things and stay updated with the latest technologies. In my free time, I enjoy hiking and exploring new places on foot.",
   skills: [
     "ROS/ROS2",
     "Python",
@@ -34,8 +34,9 @@ export const siteConfig = {
     {
       name: "Single and Dual-Arm Robotic System for Cucumber Harvesting",
       description: [
-        "A modular, multi-arm robotic system for automated cucumber harvesting, integrating perception, task planning, and control pipelines orchestrated by Behavior Trees.",
-        "Initially validated in controlled lab environments, the system was then extended to other crops and successfully tested in real-field scenarios."      ],
+        "A modular, multi-arm robotic system for automated cucumber harvesting, integrating perception, task planning, and control pipelines orchestrated by Behavior Trees, achieving under 3% error in cucumber pose and size estimation.",
+        "Initially validated in controlled lab environments, the system was then extended to other crops and successfully deployed in real-field scenarios."
+      ],
       link: "",
       media: "/cucumber_harvester.webm",
       poster: "/cucumber_thumbnail.jpg",
@@ -79,8 +80,8 @@ export const siteConfig = {
     {
       name: "Autonomous Drone Landing on Moving UGVs",
       description: [
-        "An autonomous UAV landing system for centimeter-level precision on moving UGVs, using EKF-based localization fusing drone, UGV, and UWB data.",
-        "Designed perception, pose estimation, control, and state machine pipelines for chase and landing phases, validated through Gazebo simulations and real-world field tests.",
+        "An autonomous UAV landing system achieving centimeter-level precision on moving UGVs, using an EKF-based localization pipeline integrating drone, UGV, and UWB data.",
+        "Designed perception, pose estimation, control, and state machine pipelines for chase and landing, validated through Gazebo simulations and real-world field tests."
       ],
       link: "",
       media: "/uav_autoland.webm",
@@ -136,9 +137,9 @@ export const siteConfig = {
       dateRange: "July 2023 - Present",
       bullets: [
         "Develop and deploy robotics and AI software modules for industrial and agricultural robots.",
+        "Achieved a 50% reduction in development time for dexterous manipulation pipelines by integrating custom task planning modules within behavior trees.",
+        "Designed a real-time perception pipeline for detection, segmentation, tracking, 6D pose, and size estimation with under 3% error, adopted by multiple internal robotics teams.",
         "Train and implement learning-from-demonstration pipelines (VLAs, Diffusion Policies) to solve dexterous manipulation tasks, such as fruit harvesting and industrial assembly.",
-        "Achieved a 50% reduction in development time for perception-based dexterous manipulation pipelines by developing and integrating custom task planning modules within behavior trees.",
-        "Gained extensive hands-on expertise with collaborative robots, drones, cameras and various mechatronic systems.",
       ],
       skills: [
         "C++",
@@ -159,7 +160,7 @@ export const siteConfig = {
       bullets: [
         "Developed and maintained control systems for General Motors vehicles, deployed on around 100,000 units in 2024 alone.",
         "Enhanced fault diagnostic performance by ~50% by combining RNN-based system prediction with classical model-based methods, while reducing calibration effort by ~30%.",
-        "Collaborated with cross-functional teams in Italy and the U.S. to meet development, calibration, and testing milestones.",
+        "Collaborated with cross-functional teams in Italy, India, and the U.S. to meet development, calibration, and testing milestones.",
       ],
       skills: ["C", "Python", "Git", "MATLAB", "Simulink", "DOORS"],
     },
@@ -169,9 +170,10 @@ export const siteConfig = {
       location: "Turin, Italy",
       dateRange: "Mar 2021 - Dec 2021",
       bullets: [
-        "Developed an Autonomous UAV Landing System achieving centimeter-level precision on moving UGVs in real world scenarios.",
-        "Designed the complete landing pipeline, including UWB localization, perception modules, and control systems.",
-        "Validated the system through both Gazebo simulations and real-world field tests.",
+  "Developed an autonomous UAV landing system achieving centimeter-level precision on moving UGVs in real-world scenarios.",
+  "Designed the complete landing pipeline, integrating UWB localization, perception modules, and control systems.",
+  "Implemented a robust EKF-based localization pipeline fusing UWB, UAV, and UGV data, achieving position errors under 5 cm during chase and landing maneuvers.",
+  "Validated the system through Gazebo simulations and real-world field tests, proving precise and reliable landing under dynamic conditions."
       ],
       skills: ["Python", "C++", "ROS2", "Gazebo", "MATLAB", "Simulink", "Git"],
     },
@@ -184,7 +186,6 @@ export const siteConfig = {
       dateRange: "2019 - 2021",
       achievements: [
         "Final Grade: 110 with honours/110 (GPA: 4.0/4.0)",
-        "Thesis: 'UAV precise ATOL techniques using UWB technology'",
         "Won first place at 'Challenge@Polito: Artificial Intelligence' by developing an NLP application in a multidisciplinary team to generate mind maps supporting students with learning disabilities. The project evolved into a startup that raised over €1.5 million.",
       ],
     },
