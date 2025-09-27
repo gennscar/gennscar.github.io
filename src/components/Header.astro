@@ -248,14 +248,14 @@ const hasPublications = siteConfig.publications && siteConfig.publications.lengt
     const mobileNameLink = document.getElementById("mobile-name-link");
     const heroSection = document.getElementById("hero");
     
-    // Header background logic
+    // Handle header background
     if (window.scrollY > 100) {
       header?.classList.add("bg-white/80", "backdrop-blur-sm", "shadow-sm");
     } else {
       header?.classList.remove("bg-white/80", "backdrop-blur-sm", "shadow-sm");
     }
     
-    // Mobile name visibility logic (independent of header background)
+    // Handle mobile name visibility separately
     if (heroSection && window.scrollY > heroSection.offsetHeight * 0.7) {
       // Show mobile name when past 70% of hero section
       mobileNameLink?.classList.remove("opacity-0", "translate-x-[-20px]");
