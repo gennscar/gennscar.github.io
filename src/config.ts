@@ -186,7 +186,7 @@ export const siteConfig = {
       dateRange: "2019 - 2021",
       achievements: [
         "Final Grade: 110 with honours/110 (GPA: 4.0/4.0)",
-        "Won first place at 'Challenge@Polito: Artificial Intelligence' by developing an NLP application in a multidisciplinary team to generate mind maps supporting students with learning disabilities. The project evolved into a startup that raised over €1.5 million.",
+        "Won first place at Challenge@Polito: Artificial Intelligence by developing an AI NLP application that automatically generates concept maps from texts to support students with learning disabilities. The project later evolved into a startup, which raised over €1.5 million.",
       ],
     },
     {
