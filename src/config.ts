@@ -11,7 +11,7 @@ export const siteConfig = {
     github: "https://github.com/gennscar",
   },
   aboutMe:
-    "I am a Robotics and AI engineer passionate about creating systems that move, sense, and learn. My background spans robotics, control systems, computer vision, and artificial intelligence, with experience in both startups and large-scale production environments. I’d describe myself as a very curious person, always eager to learn new things and stay updated with the latest technologies. In my free time, I enjoy hiking and exploring new places on foot.",
+    "I am a Robotics and AI engineer passionate about creating systems that move, sense, and learn. My background spans robotics, artificial intelligence and control systems, with experience in both startups and large-scale production environments. I’d describe myself as a very curious person, always eager to learn new things and stay updated with the latest technologies. In my free time, I enjoy hiking and exploring new places on foot.",
   skills: [
     "ROS/ROS2",
     "Python",
