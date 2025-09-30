@@ -32,6 +32,26 @@ export const siteConfig = {
   ],
   projects: [
     {
+      name: "Improving UMI with EKF Sensor Fusion and Automatic Task Splitting for Embodied AI Data Collection",
+      description: [
+        "An improved Universal Manipulation Interface (UMI) that integrates automatic task splitting and EKF-based fusion of GoPro IMU data with ARUCO marker localization, outperforming ORB-SLAM in challenging, feature-sparse settings like agricultural fields.",
+      ],
+      link: "",
+      media: "/umi_ekf.webm",
+      poster: "/umi_ekf.png",
+      github: "",
+      youtube: "",
+      paper: "https://arxiv.org/pdf/2506.09494",
+      skills: [
+        "Python",
+        "PyTorch",
+        "OpenCV",
+        "ROS2",
+        "C++",
+        "Docker",
+        ],
+    },
+    {
       name: "Single and Dual-Arm Robotic System for Cucumber Harvesting",
       description: [
         "A modular, multi-arm robotic system for automated cucumber harvesting, integrating perception, task planning, and control pipelines orchestrated by Behavior Trees, achieving sub-centimeter accuracy for cucumber pose and size estimation.",
