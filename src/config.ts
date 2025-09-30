@@ -32,7 +32,7 @@ export const siteConfig = {
   ],
   projects: [
     {
-      name: "Improving UMI with EKF Sensor Fusion and Automatic Task Splitting for Embodied AI Data Collection",
+      name: "Improving UMI with EKF Sensor Fusion for Embodied AI Data Collection",
       description: [
         "An improved Universal Manipulation Interface (UMI) that integrates automatic task splitting and EKF-based fusion of GoPro IMU data with ARUCO marker localization, outperforming ORB-SLAM in challenging, feature-sparse settings like agricultural fields.",
       ],
