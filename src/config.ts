@@ -32,6 +32,30 @@ export const siteConfig = {
   ],
   projects: [
     {
+      name: "Robo-Boy",
+      description: [
+        "Robo-Boy is a web and desktop interface for controlling and visualizing ROS 2 robots. It includes camera streaming, configurable control pads, 3D visualization, behavior-tree editing, and custom themes.",
+        "Both interfaces use the same React codebase; the desktop package is a lightweight Tauri shell and connects to a separately installed ROS stack.",
+        "The web interface is responsive and works across mobile and desktop devices.",
+      ],
+      link: "",
+      media: "/roboboy.webm",
+      poster: "",
+      github: "https://github.com/tessel-la/robo-boy",
+      youtube: "",
+      paper: "",
+      skills: [
+        "React",
+        "TypeScript",
+        "Vite",
+        "Three.js",
+        "ROS2",
+        "Docker",
+        "CSS",
+      ],
+    },
+
+    {
       name: "Improving UMI with EKF Sensor Fusion for Embodied AI Data Collection",
       description: [
         "An improved Universal Manipulation Interface (UMI) that integrates automatic task splitting and EKF-based fusion of GoPro IMU data with ARUCO marker localization, outperforming ORB-SLAM in challenging, feature-sparse settings like agricultural fields.",
@@ -74,29 +98,6 @@ export const siteConfig = {
         "Docker",
       ],
     },
-    {
-      name: "Robo-Boy",
-      description: [
-        "Robo-Boy is a mobile-first web app for controlling ROS2-based robots, including drones, manipulators, and ground robots.",
-        "It offers multi-platform control with customizable gamepad layouts, real-time WebSocket communication, and 3D visualization with point cloud and URDF model support.",
-      ],
-      link: "",
-      media: "/roboboy.webm",
-      poster: "",
-      github: "https://github.com/tessel-la/robo-boy",
-      youtube: "",
-      paper: "",
-      skills: [
-        "React",
-        "TypeScript",
-        "Vite",
-        "Three.js",
-        "ROS2",
-        "Docker",
-        "CSS",
-      ],
-    },
-
     {
       name: "Autonomous Drone Landing on Moving UGVs",
       description: [
