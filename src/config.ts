@@ -151,10 +151,18 @@ export const siteConfig = {
   ],
   experience: [
     {
+      company: "Sunrise Robotics",
+      title: "Robotics Software Engineer",
+      location: "",
+      dateRange: "Jan 2026 - Present",
+      bullets: [],
+      skills: [],
+    },
+    {
       company: "Eurecat",
-      title: "Robotics & AI Engineer",
+      title: "Robotics Software Engineer",
       location: "Barcelona, Spain",
-      dateRange: "July 2023 - Present",
+      dateRange: "2023 - Jan 2026",
       bullets: [
         "Develop and deploy robotics and AI software modules for industrial and agricultural robots.",
         "Implemented modular behavior trees orchestrating high-level dexterous manipulation tasks, reducing development time by 50%, while improving trajectory optimality and feasibility.",
@@ -186,7 +194,7 @@ export const siteConfig = {
     },
     {
       company: "PIC4SeR",
-      title: "Master's Thesis Researcher in Robotics",
+      title: "Robotics Researcher - Master's Thesis",
       location: "Turin, Italy",
       dateRange: "Mar 2021 - Dec 2021",
       bullets: [
