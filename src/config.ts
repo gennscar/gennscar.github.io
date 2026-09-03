@@ -153,16 +153,18 @@ export const siteConfig = {
     {
       company: "Sunrise Robotics",
       title: "Robotics Software Engineer",
-      location: "",
+      location: "Remote",
       dateRange: "Jan 2026 - Present",
-      bullets: [],
+      bullets: [
+        "Working on intelligent robotics transforming manufacturing.",
+      ],
       skills: [],
     },
     {
       company: "Eurecat",
       title: "Robotics Software Engineer",
       location: "Barcelona, Spain",
-      dateRange: "2023 - Jan 2026",
+      dateRange: "July 2023 - Jan 2026",
       bullets: [
         "Develop and deploy robotics and AI software modules for industrial and agricultural robots.",
         "Implemented modular behavior trees orchestrating high-level dexterous manipulation tasks, reducing development time by 50%, while improving trajectory optimality and feasibility.",
